@@ -10,6 +10,11 @@ export default function Home() {
         <h6 className="text-center">contact me via <a href="mailto:vladyslav@spilnota.xyz">mail</a> or view my <a href="https://github.com/dalechyn">github</a> or <a href="https://twitter.com/dalechyn">twitter</a> or <a href="https://warpcast.com/dalechyn.eth">warpcast</a></h6>
       </div>
       <hr/>
+      <h1>Actively Contributing</h1>
+      <ul>
+        <li><a className="font-mono" href="https://github.com/wevm/frog">wevm/frog</a> – framework for Farcaster Frames. Actively collaborating.</li>
+      </ul>
+      <hr/>
       <h1>Open Source Work</h1>
       <ul>
         <li><a className="font-mono" href="https://github.com/wevm/frog">wevm/frog</a> – framework for Farcaster Frames. Actively collaborating.</li>
@@ -41,6 +46,13 @@ export default function Home() {
       <ul>
         <li><a href="https://twitter.com/collective_eth">nft-bali 2023</a> – #2 place: <a className="font-mono" href="https://github.com/spilnotaxyz/partnerships-app">spilnotaxyz/partnerships-app</a> & <a className="font-mono" href="https://github.com/spilnotaxyz/partnerships-contracts">spilnotaxyz/partnerships-contracts</a> – a partnerships marketplace for projects to collab;</li>
         <li><a href="https://twitter.com/kyivtechsummit">kyivtechsummit 2022</a> – <a href="https://devpost.com/software/tok3nised">most impactful project built on ethereum award</a>: <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-frontend">spilnotaxyz/hackathon-kts-2022-frontend</a> & <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-backend">spilnotaxyz/hackathon-kts-2022-backend</a> & <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-contracts">spilnotaxyz/hackathon-kts-2022-contracts</a> – a platform to fundraise transparently and fight corruption in donation aids for Ukraine;</li>
+      </ul>
+      <hr/>
+      <h1>Sponsors</h1>
+      <ul>
+        <li><a href="https://wevm.dev/">wevm</a></li>
+        <li><a href="https://hypersub.withfabric.xyz/s/frog-supporter-1sre7szwdgtts">Become a sponsor via HyperSub</a></li>
+        <li>or simply send ETH/USDC to dalechyn.eth (0x7389Ec4FB686a16966f2975758e9F1B8345f5e63) on Ethereum, Base, Arbitrum, Polygon or else.</li>
       </ul>
       {allPosts.length !== 0 && <><hr/><h1>Posts</h1></>}
       {allPosts.map((post) => (
