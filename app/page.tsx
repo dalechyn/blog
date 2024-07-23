@@ -14,6 +14,20 @@ export default function Home() {
       <ul>
         <li><a className="font-mono" href="https://github.com/wevm/frog">wevm/frog</a> – framework for Farcaster Frames. Actively collaborating.</li>
       </ul>
+           <hr/>
+      <h1 id="sponsorship">Sponsorship</h1>
+      <p>If you are a business using Frog to build a revenue-generating product, please consider supporting my work on Frog and other OSS projects through the following options:</p>
+<ul>
+  <li><a href="https://hypersub.withfabric.xyz/s/frog-supporter-1sre7szwdgtts">Become a sponsor via HyperSub</a></li>
+<li>Send ETH/USDC to dalechyn.eth 0x7389Ec4FB686a16966f2975758e9F1B8345f5e63</li>
+<li>Contact <a href="mailto:vlad.dalechin@gmail.com">vlad.dalechin@gmail.com</a>/<a href="https://warpcast.com/dalechyn.eth">me on farcaster</a> with questions</li>
+</ul>
+
+<p>Sponsoring development ensures the tool that your product relies on stays healthy and actively maintained.</p>
+      <h2>Active sponsors</h2>
+      <ul>
+        <li><a href="https://wevm.dev/">wevm</a></li>
+      </ul>
       <hr/>
       <h1 id="open-source-work">Open Source Work</h1>
       <ul>
@@ -48,19 +62,7 @@ export default function Home() {
         <li><a href="https://twitter.com/kyivtechsummit">kyivtechsummit 2022</a> – <a href="https://devpost.com/software/tok3nised">most impactful project built on ethereum award</a>: <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-frontend">spilnotaxyz/hackathon-kts-2022-frontend</a> & <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-backend">spilnotaxyz/hackathon-kts-2022-backend</a> & <a className="font-mono" href="https://github.com/spilnotaxyz/hackathon-kts-2022-contracts">spilnotaxyz/hackathon-kts-2022-contracts</a> – a platform to fundraise transparently and fight corruption in donation aids for Ukraine;</li>
       </ul>
       <hr/>
-      <h1 id="sponsorship">Sponsorship</h1>
-      <p>If you are a business using Frog to build a revenue-generating product, please consider supporting my work on Frog and other OSS projects through the following options:</p>
-<ul>
-  <li><a href="https://hypersub.withfabric.xyz/s/frog-supporter-1sre7szwdgtts">Become a sponsor via HyperSub</a></li>
-<li>Send ETH/USDC to dalechyn.eth 0x7389Ec4FB686a16966f2975758e9F1B8345f5e63</li>
-<li>Contact <a href="mailto:vlad.dalechin@gmail.com">vlad.dalechin@gmail.com</a>/<a href="https://warpcast.com/dalechyn.eth">me on farcaster</a> with questions</li>
-</ul>
-
-<p>Sponsoring development ensures the tool that your product relies on stays healthy and actively maintained.</p>
-      <h2>Active sponsors</h2>
-      <ul>
-        <li><a href="https://wevm.dev/">wevm</a></li>
-      </ul>
+    
       {allPosts.length !== 0 && <><hr/><h1>Posts</h1></>}
       {allPosts.map((post) => (
         <article key={post._id}>
