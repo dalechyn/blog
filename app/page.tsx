@@ -19,7 +19,7 @@ export default function Home() {
       <p>If you are a business using Frog to build a revenue-generating product, please consider supporting my work on Frog and other OSS projects through the following options:</p>
 <ul>
 <li>Send 300$ in ETH/USDC equivalent to dalechyn.eth (0x7389Ec4FB686a16966f2975758e9F1B8345f5e63)</li>
-<li>Send 300$ in ETH/USDC equivalent to <a target="_blank" target="_blank" href="https://warpcast.com/dalechyn.eth">me on farcaster</a> <a target="_blank" target="_blank" href="https://x.com/dwr/status/1806774735109562789">(see how)</a></li>
+<li>Send 300$ in ETH/USDC equivalent to <a target="_blank" href="https://warpcast.com/dalechyn.eth">me on farcaster</a> <a target="_blank" href="https://x.com/dwr/status/1806774735109562789">(see how)</a></li>
   https://x.com/dwr/status/1806774735109562789
 <li>Contact <a target="_blank" href="mailto:vlad.dalechin@gmail.com">vlad.dalechin@gmail.com</a>/<a target="_blank" href="https://warpcast.com/dalechyn.eth">me on farcaster</a> with questions</li>
 </ul>
