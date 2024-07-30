@@ -28,6 +28,7 @@ export default function Home() {
       <h2>Active sponsors</h2>
       <ul>
         <li><a target="_blank" href="https://wevm.dev/">wevm</a></li>
+        <li><a target="_blank" href="https://warpcast.com/christopher">christopher</a></li>
       </ul>
       <hr/>
       <h1 id="open-source-work">Open Source Work</h1>
