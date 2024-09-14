@@ -1,42 +1,69 @@
-import Link from "next/link"
-import "./globals.css"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Analytics } from "@/components/analytics"
-import { ModeToggle } from "@/components/mode-toggle"
+import Link from "next/link";
+import "./globals.css";
+import { Analytics } from "@/components/analytics";
+import Verdana from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] })
+const verdana = Verdana({
+	src: [
+		{
+			path: "../public/font/Verdana.woff2",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../public/font/Verdana-Italic.woff2",
+			weight: "400",
+			style: "italic",
+		},
+		{
+			path: "../public/font/Verdana-Bold.woff2",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../public/font/Verdana-BoldItalic.woff2",
+			weight: "700",
+			style: "italic",
+		},
+	],
+});
 
 export const metadata = {
-  title: "hotwater",
-  description: "the personal website of hotwater",
-}
+	title: "dalechyn.eth",
+	description: "The personal website of Vladyslav Dalechyn",
+};
 
 interface RootLayoutProps {
-  children: React.ReactNode
+	children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <html lang="en">
-      <body
-        className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
-      >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl mx-auto py-10 px-4">
-            <header>
-              <div className="flex items-center justify-between">
-                <ModeToggle />
-                <nav className="ml-auto text-sm font-medium space-x-6">
-                  <Link href="/">Home</Link>
-                </nav>
-              </div>
-            </header>
-            <main>{children}</main>
-          </div>
-          <Analytics />
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body
+				className={`p-10 mx-auto max-w-3xl antialiased min-h-screen ${verdana.className}`}
+			>
+				<header>
+					<nav className="flex justify-between items-center">
+						<Link href="/">Home</Link>
+						<Link href="/essays">Essays</Link>
+					</nav>
+				</header>
+				<main>{children}</main>
+				<Analytics />
+				<footer>
+					<hr />
+					<address>
+						<a
+							href="https://rainbow.me/dalechyn.eth"
+							target="_blank"
+							rel="noreferrer"
+						>
+							dalechyn.eth
+						</a>
+					</address>
+				</footer>
+			</body>
+		</html>
+	);
 }

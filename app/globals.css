@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: black;
+    --background: antiquewhite;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    position: relative;
+  }
+  a {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
