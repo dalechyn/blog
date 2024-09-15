@@ -50,11 +50,11 @@ export default async function EssayPage({ params }: EssayProps) {
 	}
 
 	return (
-		<article className="py-6 prose dark:prose-invert">
+		<>
 			<h1 className="mb-2">{essay.title}</h1>
 			{essay.description && <h2 className="mt-0">{essay.description}</h2>}
 			<hr className="my-4" />
 			<Mdx code={essay.body.code} />
-		</article>
+		</>
 	);
 }
