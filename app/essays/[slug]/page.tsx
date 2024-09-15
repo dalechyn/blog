@@ -6,12 +6,12 @@ import type { Metadata } from "next";
 
 interface EssayProps {
 	params: {
-		slug: string[];
+		slug: string;
 	};
 }
 
 async function getEssayFromParams(params: EssayProps["params"]) {
-	const slug = params?.slug?.join("/");
+	const slug = params?.slug;
 	const essay = allEssays.find((essay) => essay.slugAsParams === slug);
 
 	if (!essay) {
@@ -38,7 +38,7 @@ export async function generateMetadata({
 
 export async function generateStaticParams(): Promise<EssayProps["params"][]> {
 	return allEssays.map((essay) => ({
-		slug: essay.slugAsParams.split("/"),
+		slug: essay.slugAsParams,
 	}));
 }
 
