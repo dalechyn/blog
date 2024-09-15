@@ -1,4 +1,5 @@
 /** @jsxImportSource frog/jsx */
+/* eslint-disable react/jsx-key */
 import { allEssays } from "contentlayer/generated";
 import fs from "fs/promises";
 // import markdownToTxt from "markdown-to-txt";
