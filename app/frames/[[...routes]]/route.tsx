@@ -32,7 +32,7 @@ const app = new Frog({
 app.frame("/essays/:slug", (c) => {
 	// if (c.req.method === "GET") {
 	return c.res({
-		image: "/essays/:slug/img/first",
+		image: `/essays/${c.req.param("slug")}/img/first`,
 		intents: [
 			<Button.Link href={`https://dalechyn.com/essays/${c.req.param("slug")}`}>
 				Read
