@@ -12,7 +12,7 @@ import path from "path";
 
 /// Frog
 const app = new Frog({
-	basePath: "/essays/:slug/frame",
+	basePath: "/frames",
 	title: "Frog Frame",
 	imageOptions: async () => ({
 		fonts: [
@@ -29,10 +29,10 @@ const app = new Frog({
 	}),
 });
 
-app.frame("/", (c) => {
+app.frame("/essays/:slug", (c) => {
 	// if (c.req.method === "GET") {
 	return c.res({
-		image: "/img/first",
+		image: "/essays/:slug/img/first",
 		intents: [
 			<Button.Link href={`https://dalechyn.com/essays/${c.req.param("slug")}`}>
 				Read
@@ -73,7 +73,7 @@ app.frame("/", (c) => {
 	// });
 });
 
-app.image("/img/first", (c) => {
+app.image("/essays/:slug/img/first", (c) => {
 	const essay = allEssays.find(
 		(essay) => essay.slugAsParams === c.req.param("slug"),
 	);

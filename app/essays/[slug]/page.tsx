@@ -35,7 +35,7 @@ export async function generateMetadata({
 		title: essay.title,
 		description: essay.description,
 		other: await getFrameMetadata(
-			`https://dalechyn.com/essays/${params.slug}/frame`,
+			`https://dalechyn.com/frames/essays/${params.slug}`,
 		),
 	};
 }
