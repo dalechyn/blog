@@ -13,7 +13,7 @@ import path from "path";
 /// Frog
 const app = new Frog({
 	basePath: "/frames",
-	title: "Frog Frame",
+	title: "dalechyn.com",
 	imageOptions: async () => ({
 		fonts: [
 			{
