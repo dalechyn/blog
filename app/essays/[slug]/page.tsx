@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { Mdx } from "@/components/mdx-components";
 import type { Metadata } from "next";
+import { getFrameMetadata } from "frog/next";
 
 interface EssayProps {
 	params: {
@@ -33,6 +34,9 @@ export async function generateMetadata({
 	return {
 		title: essay.title,
 		description: essay.description,
+		other: await getFrameMetadata(
+			`https://dalechyn.com/essays/${params.slug}/frame`,
+		),
 	};
 }
 
