@@ -4,14 +4,147 @@ export default function Home() {
 			<div className="flex flex-col items-center">
 				<h1>Vladyslav Dalechyn</h1>
 				<small>
-					Co-founder of{" "}
-					<a href="https://beliefs.social" target="_blank" rel="noreferrer">
+					Ex-co-founder of Spilnota, where we built{" "}
+					<a href="https://x.com/tradeonmidas" target="_blank" rel="noreferrer">
+						Midas
+					</a>{" "}
+					and{" "}
+					<a href="https://x.com/beliefssocial" target="_blank" rel="noreferrer">
 						beliefs.social
 					</a>
 					, MS (Computer Engineering), powerlifter.
 					<br />
 				</small>
 			</div>
+			<h2 id="about">About</h2>
+			<article>
+				<p>
+					I&apos;m a software engineer who&apos;s worked across the entire stack
+					since my first commercial role in 2020, most of it in crypto. I write Solidity and the applied math
+					behind AMMs and bonding curves; I&apos;ve run our own Base node with a
+					custom Rust indexer chewing through terabytes of ERC-20 transfers and
+					swaps; and I build the backends, SDKs, Telegram bots, and frontends on
+					top of it.
+				</p>
+				<p>
+					I&apos;ve authored codegen SDKs that generate contract-specific
+					TypeScript on the fly, shipped an options-trading protocol&apos;s
+					client libraries, and as a technical co-founder taken products from an
+					empty repo to launch with a team of two. I like owning a product end
+					to end &ndash; from the contract to the pixel &ndash; and I care more
+					about shipping something real than about it being theoretically
+					perfect.
+				</p>
+			</article>
+			<h2 id="experience">Experience</h2>
+			<ul>
+				<li>
+					<b>Spilnota</b>{" "}
+					<small className="opacity-50">Dec 2022 &ndash; Jun 2026</small> &ndash;
+					co-founder &amp; CTO. Built{" "}
+					<a href="https://x.com/beliefssocial" target="_blank" rel="noreferrer">
+						beliefs.social
+					</a>
+					, a <i>bonding</i> memecoin launchpad on Base with timed buy
+					whitelists, custom liquidity provisioning, and heavy contract +
+					applied-math work; then{" "}
+					<a href="https://x.com/tradeonmidas" target="_blank" rel="noreferrer">
+						Midas
+					</a>
+					, a memecoin trading platform (Axiom / bullx style) on our own Base
+					node and a custom Rust indexer ingesting terabytes of on-chain data,
+					built end to end by two engineers.
+				</li>
+				<li>
+					<b>Abstract Money</b>{" "}
+					<small className="opacity-50">Nov 2023 &ndash; May 2024</small> (
+					<a
+						href="https://docs.abstract.money"
+						target="_blank"
+						rel="noreferrer"
+					>
+						abstract.money
+					</a>
+					, part-time) &ndash; senior software engineer. Led frontend
+					development and authored{" "}
+					<a
+						target="_blank"
+						className="font-mono"
+						href="https://github.com/AbstractSDK/abstract.js"
+						rel="noreferrer"
+					>
+						abstract.js
+					</a>
+					, a codegen SDK that generates contract-specific TypeScript on the fly
+					for Cosmos abstract accounts.
+				</li>
+				<li>
+					<b>Valorem</b>{" "}
+					<small className="opacity-50">May 2023 &ndash; Oct 2023</small> (
+					<a href="https://valorem.xyz" target="_blank" rel="noreferrer">
+						valorem.xyz
+					</a>
+					, contract) &ndash; senior full-stack engineer across frontend and
+					smart contracts for a protocol writing physically-settled options on
+					any ERC-20 pair; authored the{" "}
+					<a
+						target="_blank"
+						className="font-mono"
+						href="https://github.com/valorem-labs-inc/typescript-sdk"
+						rel="noreferrer"
+					>
+						TypeScript SDK
+					</a>{" "}
+					and cash-settlement periphery contracts.
+				</li>
+				<li>
+					<b>Curra</b>{" "}
+					<small className="opacity-50">Feb 2023 &ndash; Jul 2023</small>{" "}
+					(contract) &ndash; technical web3 advisor on intensive smart-contract
+					gas optimizations: argument packing, Seaport-style custom pointers with
+					data reuse, and Solady&apos;s ERC1967 proxy.
+				</li>
+				<li>
+					<b>Kanji</b>{" "}
+					<small className="opacity-50">Nov 2022 &ndash; May 2023</small>{" "}
+					(France, contract) &ndash; senior full-stack engineer
+					leading web3 across all development teams. Rewrote, migrated and
+					test-covered the contract suite, built a React SDK on top of{" "}
+					<a
+						target="_blank"
+						className="font-mono"
+						href="https://github.com/wevm/wagmi"
+						rel="noreferrer"
+					>
+						@wagmi/cli
+					</a>{" "}
+					codegen, and designed a custom indexer for historical on-chain data.
+				</li>
+				<li>
+					<b>LocalTrade</b>{" "}
+					<small className="opacity-50">Oct 2021 &ndash; Nov 2022</small> (Dubai)
+					&ndash; full-stack engineer and primary
+					developer of the DeFi app for the LTT utility token: static &amp;
+					dynamic farming, single-asset liquidity providing (an optimization of
+					Uniswap&apos;s AMM formula), and an off-chain NFT collection. Also
+					owned CI/CD &ndash; GitLab pipelines deploying to Google Cloud across
+					environments, with automated MythX contract analysis.
+				</li>
+				<li>
+					<b>Hack The Box</b>{" "}
+					<small className="opacity-50">Mar 2020 &ndash; Jul 2022</small>{" "}
+					(part-time) &ndash; full-stack engineer on the ParrotOS website and
+					internal tooling (React, TypeScript, Next.js, Electron, Redux);
+					mentored a junior developer to React/TypeScript proficiency.
+				</li>
+				<li>
+					<b>KTraffic</b>{" "}
+					<small className="opacity-50">Dec 2020 &ndash; Jun 2021</small> &ndash;
+					co-founder of an affiliate-marketing company running campaigns on
+					Facebook, Google and Picsart for clients across Ukraine and Canada.
+					Left to pursue engineering and web3.
+				</li>
+			</ul>
 			<h2 id="open-source-work">Open Sourced Work</h2>
 			<ul>
 				<li>
@@ -23,76 +156,7 @@ export default function Home() {
 					>
 						wevm/frog
 					</a>{" "}
-					– framework for Farcaster Frames. <b>Actively collaborating</b>.
-					<aside id="sponsorship">
-						<br />
-						If you are a business using <i>Frog</i> to build a
-						revenue-generating product, please consider supporting my work on{" "}
-						<i>Frog</i> and other OSS projects through the following options:
-						<ul>
-							<li>
-								Become a sponsor on{" "}
-								<a
-									href="https://www.drips.network/app/projects/github/wevm/frog?exact"
-									target="_blank"
-									rel="noreferrer"
-								>
-									drips.network
-								</a>
-								;
-							</li>
-							<li>
-								Send 300$ in ETH/USDC equivalent to{" "}
-								<a
-									href="https://rainbow.me/dalechyn.eth"
-									target="_blank"
-									rel="noreferrer"
-								>
-									<i>dalechyn.eth</i>;
-								</a>
-							</li>
-						</ul>
-						<p>
-							Sponsoring development ensures the tool that your product relies
-							on stays healthy and actively maintained.
-						</p>
-						Active sponsors:
-						<ul>
-							<li>
-								<a target="_blank" href="https://wevm.dev/" rel="noreferrer">
-									wevm
-								</a>
-							</li>
-							<li>
-								<a
-									target="_blank"
-									href="https://warpcast.com/christopher"
-									rel="noreferrer"
-								>
-									christopher
-								</a>
-							</li>
-						</ul>
-						<p>
-							Contact me after if you want a placement at{" "}
-							<a href="https://frog.fm" target="_blank" rel="noreferrer">
-								frog.fm
-							</a>{" "}
-							website.
-						</p>
-					</aside>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/chyn"
-						rel="noreferrer"
-					>
-						spilnotaxyz/chyn
-					</a>{" "}
-					– a headless web3 ui component library built with shadcn and wagmi. An
-					open-source experiment.
+					– framework for Farcaster Frames.
 				</li>
 				<li>
 					<a
@@ -110,143 +174,6 @@ export default function Home() {
 					<a
 						target="_blank"
 						className="font-mono"
-						href="https://github.com/valorem-labs-inc/typescript-sdk"
-						rel="noreferrer"
-					>
-						valorem-labs-inc/typescript-sdk
-					</a>{" "}
-					– a typescript sdk for interacting with valorem&apos;s{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/valorem-labs-inc/clear"
-						rel="noreferrer"
-					>
-						clear
-					</a>{" "}
-					protocol and{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/valorem-labs-inc/trade-interfaces"
-						rel="noreferrer"
-					>
-						trade-api
-					</a>
-					;
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/valorem-labs-inc/clear-periphery"
-						rel="noreferrer"
-					>
-						valorem-labs-inc/clear-periphery
-					</a>{" "}
-					– a cash settlement periphery contract using{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/Uniswap/v3-core"
-						rel="noreferrer"
-					>
-						uniswap-v3
-					</a>{" "}
-					flash loans for exercising options in{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/valorem-labs-inc/clear"
-						rel="noreferrer"
-					>
-						clear
-					</a>{" "}
-					protocol;
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/valorem-labs-inc/trade-interfaces"
-						rel="noreferrer"
-					>
-						valorem-labs-inc/trade-interfaces
-					</a>{" "}
-					– a trade api enabling peer-to-peer, signature-based, noncustodial
-					digital asset trading via low latency{" "}
-					<a
-						target="_blank"
-						href="https://grpc.io/docs/what-is-grpc/introduction/"
-						rel="noreferrer"
-					>
-						grpc
-					</a>{" "}
-					and{" "}
-					<a
-						target="_blank"
-						href="https://github.com/grpc/grpc-web"
-						rel="noreferrer"
-					>
-						grpc-web
-					</a>{" "}
-					tls-encrypted version 3 protocol buffer interfaces, with order
-					settlement via{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/ProjectOpenSea/seaport"
-						rel="noreferrer"
-					>
-						seaport
-					</a>{" "}
-					protocol; Collaborated in past.
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/paradigmxyz/flux"
-						rel="noreferrer"
-					>
-						paradigmxyz/flux
-					</a>{" "}
-					– a graph-based LLM power tool for exploring many completions in
-					parallel; Contributed with ideas.
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/dalechyn/arbitrageur"
-						rel="noreferrer"
-					>
-						dalechyn/arbitrageur
-					</a>{" "}
-					– an attempt to extract cross-dex mev amongst{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/Uniswap/v2-core"
-						rel="noreferrer"
-					>
-						uniswap-v2
-					</a>{" "}
-					and{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/Uniswap/v3-core"
-						rel="noreferrer"
-					>
-						uniswap-v3
-					</a>{" "}
-					forks; My failed attempt to become MEV searcher.
-				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
 						href="https://github.com/dalechyn/abi-signature-bruteforcer"
 						rel="noreferrer"
 					>
@@ -255,37 +182,12 @@ export default function Home() {
 					– a cpu-based solidity function signature bruteforcer to save extra
 					gas on calls; Author.
 				</li>
-				<li>
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/nfting-frontend"
-						rel="noreferrer"
-					>
-						spilnotaxyz/nfting-frontend
-					</a>{" "}
-					&{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/nfting-backend"
-						rel="noreferrer"
-					>
-						spilnotaxyz/nfting-backend
-					</a>{" "}
-					– a web application that gathers ethereum account data and outputs nft
-					statistics;
-				</li>
 			</ul>
 			<h2>Contacts</h2>
 			<article>
 				<ul>
 					<li>
-						<a
-							target="_blank"
-							href="mailto:vladyslav@spilnota.xyz"
-							rel="noreferrer"
-						>
+						<a target="_blank" href="mailto:vlad@dalechyn.com" rel="noreferrer">
 							Mail
 						</a>
 					</li>
@@ -333,25 +235,7 @@ export default function Home() {
 					>
 						nft-bali 2023
 					</a>{" "}
-					– #2 place:{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/partnerships-app"
-						rel="noreferrer"
-					>
-						spilnotaxyz/partnerships-app
-					</a>{" "}
-					&{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/partnerships-contracts"
-						rel="noreferrer"
-					>
-						spilnotaxyz/partnerships-contracts
-					</a>{" "}
-					– a partnerships marketplace for projects to collab;
+					– #2 place – a partnerships marketplace for projects to collab;
 				</li>
 				<li>
 					<a
@@ -368,33 +252,6 @@ export default function Home() {
 						rel="noreferrer"
 					>
 						most impactful project built on ethereum award
-					</a>
-					:{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/hackathon-kts-2022-frontend"
-						rel="noreferrer"
-					>
-						spilnotaxyz/hackathon-kts-2022-frontend
-					</a>{" "}
-					&{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/hackathon-kts-2022-backend"
-						rel="noreferrer"
-					>
-						spilnotaxyz/hackathon-kts-2022-backend
-					</a>{" "}
-					&{" "}
-					<a
-						target="_blank"
-						className="font-mono"
-						href="https://github.com/spilnotaxyz/hackathon-kts-2022-contracts"
-						rel="noreferrer"
-					>
-						spilnotaxyz/hackathon-kts-2022-contracts
 					</a>{" "}
 					– a platform to fundraise transparently and fight corruption in
 					donation aids for Ukraine;

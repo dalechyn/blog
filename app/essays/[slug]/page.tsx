@@ -57,6 +57,13 @@ export default async function EssayPage({ params }: EssayProps) {
 		<>
 			<h1 className="mb-2">{essay.title}</h1>
 			{essay.description && <h2 className="mt-0">{essay.description}</h2>}
+			<time dateTime={essay.date} className="text-sm opacity-60">
+				{new Date(essay.date).toLocaleDateString("en-US", {
+					year: "numeric",
+					month: "long",
+					day: "numeric",
+				})}
+			</time>
 			<hr className="my-4" />
 			<Mdx code={essay.body.code} />
 		</>

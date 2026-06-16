@@ -51,18 +51,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				</header>
 				<main>{children}</main>
 				<Analytics />
-				<footer>
-					<hr />
-					<address>
-						<a
-							href="https://rainbow.me/dalechyn.eth"
-							target="_blank"
-							rel="noreferrer"
-						>
-							dalechyn.eth
-						</a>
-					</address>
-				</footer>
 			</body>
 		</html>
 	);

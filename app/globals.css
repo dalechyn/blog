@@ -13,6 +13,7 @@
   body {
     @apply bg-background text-foreground;
     position: relative;
+    line-height: 1.6;
   }
   a {
     color: -webkit-link;
