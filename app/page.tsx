@@ -35,6 +35,15 @@ export default function Home() {
 					about shipping something real than about it being theoretically
 					perfect.
 				</p>
+				<p>
+					As of now I&apos;m free from work &ndash; taking courses through the
+					end of summer and thinking about what&apos;s next. If there&apos;s
+					something you&apos;d want to build together, send me an{" "}
+					<a href="mailto:vlad@dalechyn.com" rel="noreferrer">
+						email
+					</a>{" "}
+					&ndash; you&apos;ll also find it below.
+				</p>
 			</article>
 			<h2 id="experience">Experience</h2>
 			<ul>
